@@ -20,7 +20,7 @@ function generatePassword() {
     checkboxes.forEach(cb => {
         cb.addEventListener('change', function(){
             const checkboxCount = checkboxes.filter(box => box.checked).length;
-            if (checkedCount ===1){
+            if (checkedCount === 1){
                 checkboxes.forEach(box => {
                     if(box.checked) box.disable =true;
                 });
