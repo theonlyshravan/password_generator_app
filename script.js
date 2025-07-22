@@ -3,9 +3,9 @@ function generatePassword() {
         alert('Select at least one box!');
     }
     const length = parseInt(document.getElementById("length").value);
-    const minlength = 4;
-    if (length < minlength) {
-        alert("Password length must be at least" + minlength + "characters!");
+    const minlength = 6;
+    if (length < minLength) {
+        alert("Password length must be at least" + minLength + "characters!");
         return;
     }
     const useAlpha = document.getElementById("alphabets").checked;
