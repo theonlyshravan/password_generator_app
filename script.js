@@ -20,7 +20,7 @@ function generatePassword() {
     checkboxes.forEach(cb => {
         cb.addEventListener('change', function(){
             const checkboxCount = checkboxes.filter(box => box.checked).length;
-            if (checkedCount === 1){
+            if (checkedCount ===1){
                 checkboxes.forEach(box => {
                     if(box.checked) box.disable =true;
                 });
@@ -51,7 +51,8 @@ function generatePassword() {
 
     for (let i = password.length; i < length; i++){
         password.push(characters.charAt(Math.floor(Math.random() * characters.length)));
-    });  
+    });
+    
     password = password.sort(() => Math.random() - 0.5).join('');
     document.getElementById("result").textContent = password;
 }
