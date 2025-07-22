@@ -51,8 +51,7 @@ function generatePassword() {
 
     for (let i = password.length; i < length; i++){
         password.push(characters.charAt(Math.floor(Math.random() * characters.length)));
-    }
-    
+    });  
     password = password.sort(() => Math.random() - 0.5).join('');
     document.getElementById("result").textContent = password;
 }
